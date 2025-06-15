@@ -63,7 +63,7 @@ exports.scaffoldProject=async(projectDir,more)=>{
     await generateEnvTemplate(varliables,projectDir)
     const commandsArray=["npm init -y","npm i --save "+packageArray.join(' ')+"","npm i --save-dev "+devPackageArray.join(' ')+""]
     
-    // await exe(commandsArray,projectDir)
+    await exe(commandsArray,projectDir)
     if(more.git){
         try {
             console.log('Initializing Git repository...');
