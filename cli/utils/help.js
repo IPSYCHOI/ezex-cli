@@ -18,6 +18,7 @@ FLAGS:
   -f           Add one or more custom file(s). 
 
 NOTES:
+  - You can enter the project name if you are in correct folder or full path or just '.' That mean do that here
   - Use -c, -m, and -r after the project has been created.
   - --crud will create a project first if one does not exist.
   - You can combine --crud and --all to create a project with full options and CRUD support (recommended).

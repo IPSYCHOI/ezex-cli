@@ -44,7 +44,7 @@ You can mix and combine flags to generate controllers, models, routers, custom f
 ---
 
 ## 💡 Notes
-
+- You can enter the project name if you are in correct folder or full path or just '.' That mean do that here
 - Use `-c`, `-m`, and `-r` **after** creating the project.
 - `--crud` will **create a project first** if one doesn't exist.
 - Combine `--all` and `--crud` for a full setup with useful features.
