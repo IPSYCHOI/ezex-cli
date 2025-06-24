@@ -3,6 +3,7 @@ const path = require("path");
 
 exports.addApp = (projectDir, more) => {
     const appPath = path.join(projectDir, "app.js");
+    if(!fs.existsSync(appPath))return
     let content = fs.readFileSync(appPath, "utf-8");
 
     // Add router require/use only if more.crudName exists
