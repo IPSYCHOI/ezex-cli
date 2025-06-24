@@ -36,9 +36,16 @@ exports.init =async(args)=>{
         return
     }
     const projectName = await askProjectName();
+    let projectDir
     let more={}
     if (!projectName) return
-    const projectDir = path.join(process.cwd(),projectName);
+    if(projectName==="."){
+        projectDir = process.cwd();
+    }else{
+        projectDir = path.isAbsolute(projectName)
+        ? projectName
+        : path.join(process.cwd(), projectName);
+    }
     const projectExist=fs.existsSync(path.join(projectDir))
     if(args.d){
         const dirArray=Array.isArray(args.d)? args.d : [args.d]

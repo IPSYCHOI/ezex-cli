@@ -4,7 +4,7 @@ exports.askProjectName = async () => {
   const { projectName } = await prompts({
     type: 'text',
     name: 'projectName',
-    message: 'Project name:'
+    message: 'Project name or full path:'
   });
   return projectName;
 };
