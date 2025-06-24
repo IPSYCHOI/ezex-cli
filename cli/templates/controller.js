@@ -1,25 +1,46 @@
 exports.controllerTemplate=(name)=>{
+    
     let txt=
 `const ${name.capitalized}=require("../models/${name.lower}Model")
 
-exports.create = (req, res, next) => {
-    // TODO: implement create logic
+exports.create = async(req, res, next) => {
+    try {
+        // TODO: implement create logic
+    } catch (error) {
+        next(error)
+    }
 };
 
-exports.getAll = (req, res, next) => {
-    // TODO: implement get all logic
+exports.getAll = async(req, res, next) => {
+    try {
+        // TODO: implement get all logic
+    } catch (error) {
+        next(error)
+    }
 };
 
-exports.getOne = (req, res, next) => {
-    // TODO: implement get one logic
+exports.getOne = async(req, res, next) => {
+    try {
+        // TODO: implement get one logic
+    } catch (error) {
+        next(error)
+    }
 };
 
-exports.update = (req, res, next) => {
-    // TODO: implement update logic
+exports.update = async(req, res, next) => {
+    try {
+        // TODO: implement update logic
+    } catch (error) {
+        next(error)
+    }
 };
 
-exports.remove = (req, res, next) => {
-    // TODO: implement remove logic
+exports.remove = async(req, res, next) => {
+    try {
+        // TODO: implement remove logic
+    } catch (error) {
+        next(error)
+    }
 };
 `
 return txt
